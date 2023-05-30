@@ -1,0 +1,38 @@
+{
+  "context": {
+    "a": {
+      "type": "function",
+      "functionName": "a",
+      "parameterString": "(b, c)",
+      "functionBodyString": "{\n  const b = true\n    ? 12\n    : 34;\n  console.log(\"22\");\n}",
+      "parsed": {
+        "context": {
+          "b": {
+            "type": "variable",
+            "variableName": "b",
+            "valueExpression": "true\n    ? 12\n    : 34"
+          }
+        },
+        "statements": [
+          {
+            "type": "variable-declaration",
+            "variableName": "b",
+            "valueExpression": "true\n    ? 12\n    : 34",
+            "start": 22,
+            "end": 54
+          }
+        ]
+      }
+    }
+  },
+  "statements": [
+    {
+      "type": "function-declaration",
+      "functionName": "a",
+      "parameterString": "(b, c)",
+      "functionBodyString": "{\n  const b = true\n    ? 12\n    : 34;\n  console.log(\"22\");\n}",
+      "start": 0,
+      "end": 78
+    }
+  ]
+}

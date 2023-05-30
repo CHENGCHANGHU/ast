@@ -1,0 +1,48 @@
+{
+  "name": "@golden-tiger/javascript-package-template",
+  "version": "0.0.0",
+  "description": "@golden-tiger/javascript-package-template",
+  "main": "./lib/cjs-module.js",
+  "module": "./lib/es-module.js",
+  "typings": "./dist/src/index.d.ts",
+  "scripts": {
+    "dev:mac": "mode=development minimize=false webpack --config webpack.config.js --env development --env minimize=false",
+    "build:mac": "mode=production minimize=true webpack --config webpack.config.js --env production --env minimize",
+    "dev:windows": "set mode=development&&set minimize=false&&webpack --config webpack.config.js --env development --env minimize=false",
+    "build:windows": "set mode=production&&set minimize=true&&webpack --config webpack.config.js --env production --env minimize"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHENGCHANGHU/javascript-package-template.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "src"
+  ],
+  "keywords": [
+    "golden-tiger",
+    "javascript-package-template"
+  ],
+  "author": "Cheng ChangHu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/CHENGCHANGHU/javascript-package-template/issues"
+  },
+  "homepage": "https://github.com/CHENGCHANGHU/javascript-package-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "core-js": "^3.25.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  }
+}
